@@ -93,4 +93,10 @@ class CityListTest {
 
         assertEquals(1, cityList.countCities());
     }
+
+    @Test
+    void addNumberTest() throws Exception {
+        CityList cityList = new CityList();
+        assertEquals(10, cityList.increaseNumber(9));
+    }
 }
