@@ -1,5 +1,7 @@
 package com.example.simpleparadox.listycity;
 
+import android.util.Log;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -76,5 +78,10 @@ public class CityList {
      */
     public int countCities() {
         return cities.size();
+    }
+
+    public int increaseNumber(int val) throws AssertionError {
+        assert val > 0;
+        return val + 1;
     }
 }

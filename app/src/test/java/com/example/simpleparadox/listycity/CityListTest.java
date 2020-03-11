@@ -95,7 +95,8 @@ class CityListTest {
     }
 
     @Test
-    void failTest() {
-        assertTrue(false);
+    void addNumberTest() throws Exception {
+        CityList cityList = new CityList();
+        assertEquals(-5, cityList.increaseNumber(-6));
     }
 }
