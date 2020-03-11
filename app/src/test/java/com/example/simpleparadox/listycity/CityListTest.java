@@ -97,6 +97,6 @@ class CityListTest {
     @Test
     void addNumberTest() throws Exception {
         CityList cityList = new CityList();
-        assertEquals(-5, cityList.increaseNumber(-6));
+        assertEquals(10, cityList.increaseNumber(9));
     }
 }
