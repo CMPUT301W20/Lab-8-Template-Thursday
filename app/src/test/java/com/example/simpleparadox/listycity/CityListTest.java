@@ -93,4 +93,11 @@ class CityListTest {
 
         assertEquals(1, cityList.countCities());
     }
+
+    @Test
+    void testFailCI() {
+        Summer s = new Summer();
+
+        assertEquals(4, s.add(2, 2));
+    }
 }
