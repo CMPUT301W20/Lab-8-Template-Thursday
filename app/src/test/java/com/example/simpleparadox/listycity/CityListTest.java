@@ -12,9 +12,17 @@ class CityListTest {
         cityList.add(mockCity());
         return cityList;
     }
+    private CityList mockCityList2() {
+        CityList cityList = new CityList();
+        cityList.add(mockCity2());
+        return cityList;
+    }
 
     private City mockCity() {
         return new City("Edmonton", "Alberta");
+    }
+    private City mockCity2() {
+        return new City("Calgary", "Alberta");
     }
 
     @Test
@@ -92,5 +100,12 @@ class CityListTest {
         CityList cityList = mockCityList();
 
         assertEquals(1, cityList.countCities());
+    }
+
+    @Test
+    void testHasCity2() {
+        CityList cityList = mockCityList2();
+
+        assertTrue(cityList.hasCity(mockCity2()));
     }
 }
