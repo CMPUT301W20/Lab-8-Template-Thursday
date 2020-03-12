@@ -23,6 +23,21 @@ public class CityList {
     }
 
     /**
+     * This gets the city from the list at the position
+     * @param position
+     *      This is the position of the city to be obtained
+     * @return
+     *      Return the city at the position
+     */
+    public City getCity(int position) {
+        if ((position < 0) || (position >= cities.size())) {
+            throw new IllegalArgumentException();
+        }
+
+        return cities.get(position);
+    }
+
+    /**
      * This returns a sorted list of cities
      * @return
      *      Return the sorted list
