@@ -1,5 +1,6 @@
 package com.example.simpleparadox.listycity;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -76,5 +77,22 @@ public class CityList {
      */
     public int countCities() {
         return cities.size();
+    }
+
+    /**
+     * Return all cities having the specified name
+     * @param cityName
+     *      specified name for the city
+     * @return
+     *      list of all city having the specified name
+     */
+    public City getCity(String cityName) {
+        City city = new City();
+        /*for (City c : this.cities) {
+            if (c.getCityName().equals(cityName)) {
+                cities.add(c);
+            }
+        }*/
+        return city;
     }
 }
