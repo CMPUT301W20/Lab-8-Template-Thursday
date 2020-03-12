@@ -79,6 +79,7 @@ public class CityList {
     }
 
     public String returnLastCityName(){
-        return "";
+        City city = cities.get(cities.size() - 1);
+        return city.getCityName();
     }
 }
