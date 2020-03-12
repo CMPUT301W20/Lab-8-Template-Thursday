@@ -23,6 +23,14 @@ public class CityList {
     }
 
     /**
+     * exercise for CI, just a dummy method :)
+     * @return
+     */
+    public int exerciseForCI() {
+        return 13579;
+    }
+
+    /**
      * This returns a sorted list of cities
      * @return
      *      Return the sorted list
