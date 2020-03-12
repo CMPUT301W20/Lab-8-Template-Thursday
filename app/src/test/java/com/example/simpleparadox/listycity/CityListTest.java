@@ -14,7 +14,7 @@ class CityListTest {
     }
     private CityList mockCityList2() {
         CityList cityList = new CityList();
-//        cityList.add(mockCity2());
+        cityList.add(mockCity2());
         return cityList;
     }
 
