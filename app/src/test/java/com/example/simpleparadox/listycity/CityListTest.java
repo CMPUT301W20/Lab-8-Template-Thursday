@@ -96,6 +96,6 @@ class CityListTest {
 
     @Test
     void lab8() {
-        int num = 1/0;
+        int num = 1/1;
     }
 }
