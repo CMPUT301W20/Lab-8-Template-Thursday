@@ -100,6 +100,6 @@ class CityListTest {
         City city = new City("Victoria", "British Columbia");
         cityList.add(city);
 
-        assertEquals(3, cityList.countCities());
+        assertEquals(2, cityList.countCities());
     }
 }
