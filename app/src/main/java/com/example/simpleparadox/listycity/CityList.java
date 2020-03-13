@@ -9,6 +9,19 @@ import java.util.List;
  */
 public class CityList {
     private List<City> cities = new ArrayList<>();
+    
+    /**
+     * This adds a city to the list if the city does not exist
+     * @param city
+     *      This is a candidate city to add
+     */
+    public void addOne(City city) {
+        if (hasCity(city)) {
+            throw new IllegalArgumentException();
+        }
+        cities.add(city);
+    }
+
 
     /**
      * This adds a city to the list if the city does not exist
