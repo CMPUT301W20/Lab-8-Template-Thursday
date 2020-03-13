@@ -90,7 +90,8 @@ public class CityList {
         City city = new City();
         for (City c : this.cities) {
             if (c.getCityName().equals(cityName)) {
-                cities.add(c);
+                city = c;
+                break;
             }
         }
         return city;
