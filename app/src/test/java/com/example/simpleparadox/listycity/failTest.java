@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class failTest {
     @Test
-    void testSuccess() {
-        assertEquals(1,1);
+    void testFail() {
+        assertEquals(1,2);
     }
 }
