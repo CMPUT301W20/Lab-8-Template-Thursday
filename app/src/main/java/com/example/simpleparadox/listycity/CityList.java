@@ -88,11 +88,11 @@ public class CityList {
      */
     public City getCity(String cityName) {
         City city = new City();
-        /*for (City c : this.cities) {
+        for (City c : this.cities) {
             if (c.getCityName().equals(cityName)) {
                 cities.add(c);
             }
-        }*/
+        }
         return city;
     }
 }
