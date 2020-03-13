@@ -1,8 +1,6 @@
 package com.example.simpleparadox.listycity;
 
 import org.junit.jupiter.api.Test;
-
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class CityListTest {
@@ -74,6 +72,15 @@ class CityListTest {
 
         assertEquals(1, cityList.countCities());
         assertEquals(0, city.compareTo(cityList.getCities().get(0)));
+    }
+
+    @Test
+    void testReplaceCity(){
+        CityList cityList = mockCityList();
+
+        City city = new City("Charlottetown", "Prince Edward Island");
+        cityList.replaceCity("Edmonton", "Alberta");
+        assertEquals(1, cityList.countCities());
     }
 
     @Test
