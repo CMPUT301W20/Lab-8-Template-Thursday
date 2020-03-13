@@ -77,4 +77,18 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+
+
+    /**
+     * What do you want to build?
+     * public String getCity(int city_position){
+     *         return cities.get(city_position).getCityName();
+     *     }
+     * */
+
+    public String getCity(int city_position){
+        return cities.get(city_position).getCityName();
+    }
+
+
 }
