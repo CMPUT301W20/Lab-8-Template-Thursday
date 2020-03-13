@@ -77,4 +77,17 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
+    /**
+     * Gets the province name of the last item in the list city
+     * @return the province name of the last item in the list city
+     * @Exceprtion IndexOutOfBoundsException empty list exception
+     */
+    public String getLastListCityProvinceName(){
+        int size = countCities();
+        if (size==0){
+            throw new IndexOutOfBoundsException();
+        }
+        City city = cities.get(size-1);
+        return city.getProvinceName();
+    }
 }
