@@ -47,7 +47,6 @@ public class CityList {
                 return true;
             }
         }
-
         return false;
     }
 
@@ -65,6 +64,15 @@ public class CityList {
             if (c.compareTo(city) == 0){
                 cities.remove(c);
                 break;
+            }
+        }
+    }
+
+    public void replaceCity(City city, City replacementCity){
+        for (City c: cities){
+            if (c == city){
+                cities.remove(city);
+                cities.add(replacementCity);
             }
         }
     }
