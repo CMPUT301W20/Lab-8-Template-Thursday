@@ -86,5 +86,9 @@ public class CityList {
      *     }
      * */
 
+    public String getCity(int city_position){
+        return cities.get(city_position).getCityName();
+    }
+
 
 }
