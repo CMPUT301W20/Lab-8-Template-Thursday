@@ -85,6 +85,6 @@ public class CityList {
      *      First City in city list
      */
     public City getFirstCity() {
-        // return cities.get(0);
+         return cities.get(0);
     }
 }

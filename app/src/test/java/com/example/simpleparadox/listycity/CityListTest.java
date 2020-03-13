@@ -95,8 +95,8 @@ class CityListTest {
     }
 
     @Test
-    void testGetCityName() {
+    void testGetFirstCity() {
         CityList cityList = mockCityList();
-        assertEquals(cityList.getFirstCity(), "Edmonton");
+        assertEquals(cityList.getFirstCity(), cityList.getCities().get(0));
     }
 }
