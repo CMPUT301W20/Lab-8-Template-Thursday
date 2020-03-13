@@ -95,7 +95,7 @@ class CityListTest {
     }
 
     @Test
-    void testFailed() {
+    void failedTest() {
         CityList cityList = mockCityList();
 
         assertEquals(0, cityList.countCities());
