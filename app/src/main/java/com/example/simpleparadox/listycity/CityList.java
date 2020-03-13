@@ -77,13 +77,4 @@ public class CityList {
     public int countCities() {
         return cities.size();
     }
-
-    /**
-     * Gets the province name of the last item in the list city
-     * @return the province name of the last item in the list city
-     * @Exceprtion empty list exception
-     */
-    public String getLastListCityProvinceName(){
-        return "";
-    }
 }
