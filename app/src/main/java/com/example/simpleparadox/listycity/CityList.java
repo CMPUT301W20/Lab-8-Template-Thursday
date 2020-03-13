@@ -68,6 +68,15 @@ public class CityList {
         }
     }
 
+    public void replaceCity(City city, City replacementCity){
+        for (City c: cities){
+            if (c == city){
+                cities.remove(city);
+                cities.add(replacementCity);
+            }
+        }
+    }
+
     /**
      * Return the size of the city list
      * @return

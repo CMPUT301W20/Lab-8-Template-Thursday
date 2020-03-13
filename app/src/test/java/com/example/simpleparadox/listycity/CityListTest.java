@@ -79,7 +79,7 @@ class CityListTest {
         CityList cityList = mockCityList();
 
         City city = new City("Charlottetown", "Prince Edward Island");
-        cityList.replaceCity("Edmonton", "Alberta");
+        cityList.replaceCity(mockCity(), city);
         assertEquals(1, cityList.countCities());
     }
 
