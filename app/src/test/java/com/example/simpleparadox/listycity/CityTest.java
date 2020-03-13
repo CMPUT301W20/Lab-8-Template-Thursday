@@ -12,8 +12,8 @@ public class CityTest {
 
     @Test
     void testCompareTo(){
-//        City city = new City("Edmonton", "Alberta");
-//        assertEquals(2, city.compareTo(mockCity()));
+        City city = new City("Edmonton", "Alberta");
+        assertEquals(0, city.compareTo(mockCity()));
     }
 
 
