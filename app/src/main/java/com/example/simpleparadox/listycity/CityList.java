@@ -15,6 +15,8 @@ public class CityList {
      * @param city
      *      This is a candidate city to add
      */
+
+
     public void add(City city) {
         if (hasCity(city)) {
             throw new IllegalArgumentException();
@@ -76,5 +78,9 @@ public class CityList {
      */
     public int countCities() {
         return cities.size();
+    }
+
+    public void clearCities() {
+        cities.clear();
     }
 }
