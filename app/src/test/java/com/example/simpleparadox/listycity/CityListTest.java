@@ -18,6 +18,15 @@ class CityListTest {
     }
 
     @Test
+    void testClearCity() {
+        CityList cityList = mockCityList();
+        City city = new City("Calgary", "Alberta");
+        cityList.add(city);
+        cityList.clearCities();
+        assertEquals(0, cityList.countCities());
+    }
+
+    @Test
     void testAdd() {
         CityList cityList = mockCityList();
 
