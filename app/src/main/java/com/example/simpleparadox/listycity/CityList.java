@@ -79,6 +79,6 @@ public class CityList {
     }
 
     public boolean isEmpty() {
-        throw new UnsupportedOperationException();
+        return cities.isEmpty();
     }
 }

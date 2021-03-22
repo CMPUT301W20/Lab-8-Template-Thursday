@@ -99,5 +99,7 @@ class CityListTest {
         CityList cityList = mockCityList();
 
         assertFalse(cityList.isEmpty());
+        cityList.delete(mockCity());
+        assertTrue(cityList.isEmpty());
     }
 }
